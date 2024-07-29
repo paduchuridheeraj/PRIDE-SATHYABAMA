@@ -1,29 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Registration Form</title>
+<title>Register Form</title>
 </head>
 <body>
-    <h1>Registration Form</h1><br>
-    <label for="name">Name</label><br>
-    <input type="text" id="name" name="name"><br><br>
-    <label for="DOB">Date of Birth</label><br>
-    <input type="date" for="DOB" name="DOB"><br><br>
-    <label for="mail">Email</label><br>
-    <input type="email" id="mail" name="mail"><br><br>
-    <label for="designation">Designation</label><br>
-    <input type="text" id="designation" name="designation"><br><br>
-    <label for="department">Department</label><br>
-    <input type="text" id="department" name="department"><br><br>
-    <label for="salary">Salary</label><br>
-    <input type="text" id="salary" name="salary"><br><br>
-    <label for="address">Address</label><br>
-    <textarea id="address" name="address"></textarea><br>
-    <br><br>
-    <input type="submit" value="register">
-    
 
+<h1><i>Register</i></h1>
+<form>
+  <table>
+  <th>
+    <td>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br><br>
+    </td>
+    <td>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  </td>
+  </th>
+  </table>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email">
+  <p style="font-size: 10px;">We'll never share your email with anyone else.</p>
+  
+  <label for="gender">Gender</label><br>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br><br>
+
+  <label for="city">City:</label><br>
+  <input type="text" id="city" name="city"><br><br>
+  <label for="country">Country:</label><br>
+  <input type="select" id="country" name="name">
+  <br><br>
+  <label for="password">Create password:</label><br>
+  <input type="password" id="password" name="password"><br>
+  <input type="checkbox" id="terms" name="terms">
+  <label for="terms">I am agree with terms and contitions</label><br>
+  <input type="submit" value="Register">
+</form> 
+<p>Have an account? <a href="#">Log In</a></p>
 </body>
 </html>
