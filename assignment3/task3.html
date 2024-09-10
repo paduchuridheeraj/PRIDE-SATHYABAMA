@@ -3,177 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Layout</title>
-    
+    <title>Ecommerce Clone</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .bg{
-    background-color: white;
-}
-.top-b{
-    background-color: rgb(14, 99, 235);
-    width: 100%;
-    height: 30px;
-       
-}
-li{
-    display: inline;
-    color: whitesmoke;
-    margin-left: 70px;
-}
-
-.r-div{
-    text-align: right;
-
-}
-.div-search{
-    display: inline;
-    color:black
-    
-}
-
-.types{
-    color: rgb(15, 7, 28);
-    margin-left: 60px;
-    font-weight: bold;
-}
-.mid{
-    background-color: orange;
-    width: 100vw;
-    height: 20vh;
-    text-align: center;
-    padding-top: 30px;
-    color: white;
-}
-
-.block{
-    height:13vh;
-    width: 100vw;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    }
-.logos{
-    height:15vh;
-    width:33vw;
-    color: black;
-    align-items: center;
-    padding: 20px;
-    }
-
-#lota{
-    background-color: aliceblue;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-#imge{
-    border-spacing: 20px;
-}
-#imge2{
-    border-spacing: 20px;
-}
-body{
-    height: 100vh;
-    width: 100vw;
-}
+        /* Custom styles */
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+        .banner {
+            background-image: url('images/banner.png'); /* Placeholder */
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .banner h1 {
+            font-size: 48px;
+        }
+        .features {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .features .col-md-4 {
+            margin-bottom: 20px;
+        }
+        .products .card {
+            margin-bottom: 30px;
+        }
     </style>
 </head>
 <body>
-    <div class="bg">
-        <div class="top-b">
-                <ul type="">
-                    <div class="li">
-                    <li>Home</li>
-                    <li>Delievery</li>
-                    <li>Payment</li>
-                    <li>CELL</li>
-                    <li>English</li>
-                </div>
-                    
-                        
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">Bootstrap Ecommerce</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Delivery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Payment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign In</a>
+                    </li>
                 </ul>
             </div>
-            
         </div>
-        <hr>
-        <div class="div-search">
-            <ul>
-                <l1>Bootstrap Ecommerce</l1>
-                <li><input height="20px" width="100vw"  type="text" id="search" placeholder="Search"><button>search</button></li>
-                <li style="color: black;">Sign-in|Register</li>
-            </ul>
-            
-        </div>
-        <hr>
-        <div class="types">
-            <table type="">
-                <tr>
-                    <td>All Category||</td>
-                    <td>Fashion||</td>
-                    <td>Supermart||</td>
-                    <td>Electronics||</td>
-                    <td>Baby Toys||</td>
-                    <td>Fitness Sport||</td>
-                    <td>Clothing||</td>
-                    <td>Furniture||</td>
-                </tr>
-            </table>
-        </div>
-        <hr>
-        <div class="mid">
-            <h1>Demo Banner</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, iure!</p>
-        </div>
-        <table id="lota" type="">
-            
-            <tr>
-                <td>
-                <div class="logos">
-                <img src="images/fast-logo.png">
-                <h3>Fast Delievery</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, neque?</p>                </div>
-                </td>
-                <td>
-                <div class="logos">
-                <img src="images/control-logo.png">
-                <h3>Creative Strategy</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, neque?</p>                </div>
-                </td>
-                <td>
-                <div class="logos">
-                <img src="images/secure-logo.png">
-                <h3>High Secured</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, neque?</p>                </div>
-                </td>
-            </tr>
-        </table>
-        <div>
-            <h3>Similar Products</h3>
-        </div>
-        <table id="imge" type="">
-            <tr>
-                <td><img src="images/t-shirt.png"> </td>
-                <td><img src="images/sweater.png"> </td>
-                <td><img src="images/shot.png"> </td>
-                <td><img src="images/bag.png"> </td>
-            </tr>
-        </table>
-        <div>
-            <h3>New Arrived</h3>
-        </div>
-        <table id="imge2" type="">
-            <tr>
-                <td><img src="images/laptops.png"> </td>
-                <td><img src="images/chair.png"> </td>
-                <td><img src="images/watch.png"> </td>
-                <td><img src="images/head_set.png"> </td>
-            </tr>
-        </table>
+    </nav>
 
-        
-        
-            
-            
-            
+    <!-- Banner -->
+    <section class="banner">
+        <div class="container">
+            <h1>Great Banner</h1>
+            <p>Hey, I am demo banner just for design</p>
+        </div>
+    </section>
 
-        
-    </div>
+    <!-- Features Section -->
+    <section class="features py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fas fa-truck fa-3x mb-3"></i>
+                    <h4>Fast Delivery</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-lightbulb fa-3x mb-3"></i>
+                    <h4>Creative Strategy</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-shield-alt fa-3x mb-3"></i>
+                    <h4>High Secured</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products py-5">
+        <div class="container">
+            <h3 class="mb-4">Popular Products</h3>
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/t-shirt.png" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Product Name</h5>
+                            <p class="card-text">$179.00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/sweater.png" class="card-img-top" alt="Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Product Name</h5>
+                            <p class="card-text">$280.00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/shot.png" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Product Name</h5>
+                            <p class="card-text">$56.00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/bag.png" class="card-img-top" alt="Product 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Product Name</h5>
+                            <p class="card-text">$179.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals Section -->
+    <section class="products py-5">
+        <div class="container">
+            <h3 class="mb-4">New Arrived</h3>
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/laptops.png" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">New Arrival</h5>
+                            <p class="card-text">$199.00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/chair.png" class="card-img-top" alt="Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">New Arrival</h5>
+                            <p class="card-text">$349.00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/watch.png" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">New Arrival</h5>
+                            <p class="card-text">$499.00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/head_set.png" class="card-img-top" alt="Product 4">
+                        <div class="card-body">
+                            <h5 class="card-title">New Arrival</h5>
+                            <p class="card-text">$89.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
